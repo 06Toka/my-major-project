@@ -1,0 +1,472 @@
+/* Base container styles */
+.settings-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.dark-mode .settings-container {
+  background: #1e1e1e;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sharper shadow for dark mode */
+}
+
+/* Section styles */
+.settings-container section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 6px;
+  background: #f9f9f9;
+  border-left: 4px solid #007bff;
+}
+
+.dark-mode .settings-container section {
+  background: #2d2d2d;
+  border-left: 4px solid #1e90ff;
+}
+
+/* Modified Preferences content styles */
+.settings-container .preferences-section {
+  margin-bottom: 25px;
+  padding: 12px 15px;
+  border-radius: 6px;
+  background: #f0f8ff;
+  border-left: 4px solid #4682b4;
+}
+
+.dark-mode .settings-container .preferences-section {
+  background: #263238;
+  border-left: 4px solid #5a9bd5;
+}
+
+/* Measurement units under preferences */
+.measurement-units {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.unit-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+.dark-mode .unit-option {
+  background: #333;
+}
+
+.unit-option:hover {
+  background: #e6e6e6;
+}
+
+.dark-mode .unit-option:hover {
+  background: #3a3a3a;
+}
+
+/* Headings */
+.settings-container h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.dark-mode .settings-container h2 {
+  color: #fff;
+}
+
+.settings-container h3 {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.dark-mode .settings-container h3 {
+  color: #ddd;
+}
+
+/* Paragraphs */
+.settings-container p {
+  color: #333;
+}
+
+.dark-mode .settings-container p {
+  color: #fff;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.dark-mode .form-group label {
+  color: #fff;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background: #fff;
+  color: #000;
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group textarea,
+.dark-mode .form-group select {
+  background: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.dark-mode button {
+  background: #1e90ff;
+}
+
+.dark-mode button:hover {
+  background: #4169e1;
+}
+
+/* Specific button styles */
+.delete-button,
+.delete-confirm-button {
+  background: #dc3545;
+}
+
+.delete-button:hover,
+.delete-confirm-button:hover {
+  background: #c82333;
+}
+
+.dark-mode .delete-button,
+.dark-mode .delete-confirm-button {
+  background: #ff4040;
+}
+
+.dark-mode .delete-button:hover,
+.dark-mode .delete-confirm-button:hover {
+  background: #cc3333;
+}
+
+.edit-button {
+  margin-top: 10px;
+}
+
+/* Back arrow button */
+.back-arrow {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #007bff;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.dark-mode .back-arrow {
+  color: #1e90ff;
+}
+
+.back-arrow:hover {
+  color: #0056b3;
+}
+
+.dark-mode .back-arrow:hover {
+  color: #4169e1;
+}
+
+.edit-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Profile section */
+.profile-image-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-image-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #007bff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.dark-mode .profile-image-placeholder {
+  background: #1e90ff;
+}
+
+.profile-image-upload input {
+  margin-bottom: 10px;
+}
+
+/* Checkbox and radio groups */
+.checkbox-group,
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.checkbox-item,
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dark-mode .checkbox-item label,
+.dark-mode .radio-item label {
+  color: #fff;
+}
+
+/* Notification settings */
+.setting-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* Modified Data Management styles */
+.data-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.data-option {
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.data-option:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode .data-option {
+  background: #2a2a2a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .data-option:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Danger zone */
+.danger-zone {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #dc3545;
+}
+
+.dark-mode .danger-zone {
+  border-top: 1px solid #ff4040;
+}
+
+/* Modified Account Deletion form styles - now vertical */
+.delete-form {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  border-left: 4px solid #dc3545;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dark-mode .delete-form {
+  background: #252525;
+  border-left: 4px solid #ff4040;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.delete-form input,
+.delete-form select {
+  margin-bottom: 10px;
+}
+
+.delete-form .form-group {
+  width: 100%;
+}
+
+.delete-form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.delete-form-buttons button {
+  width: 100%;
+}
+
+/* Success and error messages */
+.success-message {
+  padding: 10px;
+  background: #28a745;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.dark-mode .success-message {
+  background: #2ecc71;
+}
+
+.error-message {
+  padding: 10px;
+  background: #dc3545;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.dark-mode .error-message {
+  background: #ff4040;
+}
+
+/* Support section */
+.support-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.dark-mode .contact-details {
+  background: #2d2d2d;
+}
+
+/* About section */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.legal-links,
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.social-icons {
+  display: flex; /* or inline-flex, depending on layout */
+  gap: 10px; /* spacing between icons */
+}
+.social-icons a {
+  color: #000; /* or your preferred color */
+  font-size: 24px; /* adjust size */
+  text-decoration: none;
+}
+.social-icons a:hover {
+  color: #007bff; /* optional hover effect */
+}
+/* Links */
+.settings-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.settings-container a:hover {
+  text-decoration: underline;
+}
+
+.dark-mode .settings-container a {
+  color: #1e90ff;
+}
+
+/* Dark mode body */
+body {
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Dark mode toggle */
+.dark-mode-toggle {
+  background-color: #007bff;
+}
+
+.dark-mode .dark-mode-toggle {
+  background-color: #1e90ff;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #0056b3;
+}
+
+.dark-mode .dark-mode-toggle:hover {
+  background-color: #4682b4;
+}

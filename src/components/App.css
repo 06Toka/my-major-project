@@ -1,0 +1,19 @@
+/* App.css */
+.App {
+    text-align: center;
+  }
+  
+  .home-intro {
+    padding: 50px;
+  }
+  
+  .home-intro h1 {
+    font-size: 3em;
+    color: #2c3e50;
+  }
+  
+  .home-intro p {
+    font-size: 1.2em;
+    color: #34495e;
+  }
+  
